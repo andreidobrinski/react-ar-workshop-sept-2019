@@ -8,6 +8,7 @@ import {
   ViroARScene,
   ViroText,
   ViroConstants,
+  ViroBox,
 } from 'react-viro';
 
 export default class HelloWorldSceneAR extends Component {
@@ -28,6 +29,24 @@ export default class HelloWorldSceneAR extends Component {
     return (
       <ViroARScene onTrackingUpdated={this._onInitialized} >
         <ViroText text={this.state.text} scale={[.5, .5, .5]} position={[0, 0, -1]} style={styles.helloWorldTextStyle} />
+        <ViroBox
+          height={1}
+          length={1}
+          width={1}
+          position={[0, 0, -5]}
+        />
+        <ViroBox
+          height={1}
+          length={1}
+          width={1}
+          position={[0.5, 1, -5]}
+        />
+        <ViroBox
+          height={1}
+          length={1}
+          width={1}
+          position={[1, 0, -5]}
+        />
       </ViroARScene>
     );
   }
