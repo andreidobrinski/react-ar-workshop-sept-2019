@@ -1,0 +1,3 @@
+rootProject.name = 'arworkshop'
+
+include ':app'
