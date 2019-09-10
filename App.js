@@ -21,12 +21,13 @@ import {
   ViroVRSceneNavigator,
   ViroARSceneNavigator
 } from 'react-viro';
+import apiKey from './api-key';
 
 /*
  TODO: Insert your API key below
  */
 var sharedProps = {
-  apiKey:"API_KEY_HERE",
+  apiKey,
 }
 
 // Sets the default scene you want for AR and VR
